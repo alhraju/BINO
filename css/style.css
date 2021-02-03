@@ -317,50 +317,68 @@ a,a:hover{
 .portfolio .inner-portfolio img{
 	margin-bottom: 20px;
 }
-.portfolio .inner-portfolio p .all-color{
-	color: #e74c3c;
-	font-weight: 600;
+.portfolio .filter{
+	width: 100%;
+	text-align: center;
+	padding: 40px 0;
 }
-.portfolio .inner-portfolio p span{
+.portfolio .filter span{
 	margin: 0 10px;
 }
-.portfolio .inner-show{
+.portfolio .filter button{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 26px;
+	color: #000;
+	text-transform: capitalize;
+	border: none;
+	background: transparent;
+	transition: 1s;
+}
+.portfolio .filter button:hover, .portfolio .filter button:focus{
+	color: #e74c3c;
+	outline: none;
+}
+.portfolio .our-work{
+	width: 100%;
+}
+.portfolio .our-work .padd{
+	padding: 2px;
+}
+.portfolio .our-work .item{
+	width: 100%;
 	position: relative;
-	margin-top: 13px;
 }
-.portfolio .inner-show img{
-	width: 322px;
-}
-.portfolio .inner-show .port-hover{
-	width: 103%;
-	height: 100%;
+.portfolio .our-work .item .item-hover{
 	position: absolute;
 	top: 0;
+	bottom: 0;
 	left: 0;
-	background-color: rgba(198, 74, 62, .8);
-	display: none;
+	right: 0;
+	background: rgba(198, 74, 62, .8);
+	transform:scale(0);
+	transform: 1s;
 }
-.portfolio .inner-show:hover .port-hover{
-	display: block;
+.portfolio .our-work .item:hover .item-hover, .portfolio .our-work .item:focus .item-hover{
+	transform:scale(1);
 }
-.portfolio .inner-show .port-hover img{
-	width: 50px;
-	margin-top: 200px;
-	margin-left: 40px;
+.portfolio .our-work .item .item-hover img{
+	margin: 180px 0 20px 20px;
 }
-.portfolio .inner-show .port-hover h4{
+.portfolio .our-work .item .item-hover h4{
 	color: #fff;
-	font-size: 24px;
+	font-size: 20px;
 	text-transform: uppercase;
-	font-weight: 600;
-	margin: 15px 0 10px 40px;
+	font-weight: 500;
+	margin-bottom: 5px;
+	margin-left: 20px;
 }
-.portfolio .inner-show .port-hover p{
+.portfolio .our-work .item .item-hover p{
 	color: #fff;
 	font-size: 14px;
 	line-height: 24px;
-	font-weight: 400;
-	margin-left: 40px;
+	font-weight: 200;
+	margin-left: 20px;
 }
 /*portfolio section code end*/
 
